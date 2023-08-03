@@ -1,0 +1,155 @@
+
+.table-context{
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  color:white;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  flex-direction: column;
+  border:2px solid black;
+  color:yellow;
+  padding:50px;
+  border-radius:5px ;
+  background-color: white;
+}
+.tabular{
+  background-color: white;
+  font-size: 19px;
+  border: 5px solid black;
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+}
+table{
+  border: 4px;
+}
+.title-style{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-add{
+  background-color: black;
+  color:white;
+  font-size:20px;
+  padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  /* border: 2px solid red; */
+  padding: 20px;
+  height: fit-content;
+  font-family: Patua One;
+}
+
+.form-data input {
+  margin: 10px 0px;
+  width: 100%;
+  padding: 10px;
+  font-family: Patua One;
+  box-sizing: border-box;
+  border: 2px solid red;
+  font-size: 18px;
+}
+
+.form-data textarea {
+  margin: 10px 0px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border: 2px solid red;
+}
+
+.form-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-class {
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  overflow-x: hidden;
+  height:max-content;
+  width:60vw;
+  margin: auto;
+  background-color: white;
+}
+
+.btn-danger{
+  background-color: red;
+  color:white;
+  padding:5px;
+  font-size:18px;
+  border-radius:5px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.btn{
+  background-color: black;
+  color:whitesmoke;
+  text-decoration: none;
+  padding:10px;
+  border-radius: 5px;
+  margin-right:10px;
+  margin-bottom:10px;
+  cursor: pointer;
+  font-weight: 900;
+}
+table th{
+  background-color: black;
+  color:yellow;
+  font-size:24px;
+}
+table tr{
+  background-color:blue;
+  color:white;
+  font-size:20px;
+}
+
+.fa-x {
+  padding-top: 10px;
+}
+
+.btns button {
+  color: white;
+  font-size: 18px;
+  width: fit-content;
+  padding: 10px;
+  cursor: pointer;
+  font-family: Russo One;
+}
+
+button[type="submit"] {
+  background-color: blue;
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+
+button[type="reset"] {
+  color: white;
+  background-color: black;
+}
