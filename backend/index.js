@@ -50,4 +50,5 @@ app.post("/createUser",(req,res)=>{
 
 app.listen(PORT,()=>{
     console.log("Server is Running");
+    console.log(dotenv.config());
 })
