@@ -10,6 +10,7 @@ app.use(express.json())
 dotenv.config()
 require("./db/conn");
 
+
 app.get('/',(req,res)=>{
     UserModel.find({})
     .then(users => res.json(users))
