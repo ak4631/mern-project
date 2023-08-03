@@ -10,10 +10,6 @@ app.use(express.json())
 dotenv.config()
 require("./db/conn");
 
-// const DB="mongodb+srv://efgh37716:Akash1973@cluster0.sqamujg.mongodb.net/mernstack?retryWrites=true&w=majority";
-
-// mongoose.connect("mongodb://127.0.0.1:27017/CRUD")
-
 app.get('/',(req,res)=>{
     UserModel.find({})
     .then(users => res.json(users))

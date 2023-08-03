@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 
 
-const DB="mongodb+srv://efgh37716:Akash1973@cluster0.sqamujg.mongodb.net/mernstack?retryWrites=true&w=majority";
+const DB=process.env.DATABASE;
 
 mongoose.connect(DB,{
     useNewUrlParser:true,
