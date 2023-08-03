@@ -1,13 +1,14 @@
-require("./db/conn");
 const express=require("express");
 // const mongoose=require("mongoose");
 const cors=require("cors");
 const dotenv=require("dotenv");
 const UserModel=require('./models/Users')
+const PORT=process.env.PORT || 5000
 const app=express()
 app.use(cors())
 app.use(express.json())
 dotenv.config()
+require("./db/conn");
 
 // const DB="mongodb+srv://efgh37716:Akash1973@cluster0.sqamujg.mongodb.net/mernstack?retryWrites=true&w=majority";
 
@@ -48,17 +49,7 @@ app.post("/createUser",(req,res)=>{
 })
 
 
-const PORT=process.env.PORT || 5000;
 
-// Heroku
-
-if(process.env.NODE_ENV=="production"){
-    app.use(express.static("todolist/build"));
-    const path=require("path");
-    app.get("*",(req,res)=>{
-        res.sendFile(path.resolve(__dirname,'todolist','build',"index.html"));
-    })
-}
 
 app.listen(PORT,()=>{
     console.log("Server is Running");
